@@ -1,5 +1,5 @@
 # Remove Identity Column
-You know you can't drop identity increment of a column only with a command? You must drop column with identity that is so awkward!
+Did you know you can't drop identity increment of a column only with a command? You must drop column with identity that is so awkward!
 I had a very large project that uses more than 100 database table to store information. One day I decided to convert key generations from identity to HiLow (in NHibernate) for better performace and I faced to this problem
 Finally I decided to generate a stored producer to drop old identity column and generate new un-identity primary key column.
 This stored producer does followings:
